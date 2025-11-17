@@ -36,14 +36,14 @@ public class UserController {
         return newUser;
     }
 
-    @DeleteMapping("/{asurite}")
-    public ResponseEntity<String> deleteUser(@PathVariable String asurite) {
-        User removed = users.remove(asurite);
+    @DeleteMapping()
+    public ResponseEntity<String> deleteUser(@RequestBody User user) {
+        User removed = users.remove(user.getAsurite());
         if (removed == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("No user with asurite " + asurite + " was found.");
+                    .body("No user with asurite " + user.getAsurite() + " was found.");
         }
-        return ResponseEntity.ok("Removed user " + asurite + ".");
+        return ResponseEntity.ok("Removed user " + user.getAsurite() + ".");
     }
 
     @PutMapping("/{asurite}")
