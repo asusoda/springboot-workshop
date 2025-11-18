@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class Hello {
 
-    @GetMapping
-    public String helloWorld() {
-        return "Hello, World!";
-    }
+    // Create the endpoint for the root path
+
 }
