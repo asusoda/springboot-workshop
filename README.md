@@ -1,5 +1,7 @@
 # Soda Workshop on Spring Boot
 
+Link to slides - https://github.com/asusoda/springboot-workshop/blob/master/Springboot%20Workshop.pdf
+
 ## Getting Started
 
 1. Go to https://start.spring.io/
