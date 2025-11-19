@@ -9,5 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class Hello {
 
     // Create the endpoint for the root path
+    @GetMapping
+    public String hello(){
+        return "Hello, World!";
+    }
 
 }

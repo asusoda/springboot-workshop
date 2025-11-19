@@ -3,12 +3,12 @@ package com.example.soda_workshop;
 public class User {
     private String name;
     private String asurite;
-    private Integer number;
+    private String number;
 
     public User() {
     }
 
-    public User(String name, String asurite, Integer number) {
+    public User(String name, String asurite, String number) {
         this.name = name;
         this.asurite = asurite;
         this.number = number;
@@ -30,11 +30,11 @@ public class User {
         this.asurite = asurite;
     }
 
-    public Integer getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(Integer number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 }

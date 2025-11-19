@@ -25,11 +25,17 @@ public class UserController {
     @GetMapping
     public Collection<User> allUsers() {
         // Implement the logic to return all users
+        return users.values();
     }
 
     @PostMapping
     public User createUser(@RequestBody User newUser) {
         // Implement the logic to create a new user
+        if (newUser.getAsurite() == null || newUser.getAsurite().isBlank()){
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "asurite is required");
+        }
+        users.put(newUser.getAsurite(), newUser);
+        return newUser;
     }
 
     @DeleteMapping()
