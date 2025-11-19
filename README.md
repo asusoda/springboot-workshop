@@ -4,11 +4,24 @@ Link to slides - https://github.com/asusoda/springboot-workshop/blob/master/Spri
 
 ## Getting Started
 
+### Using the Spring Initializer (Not Recommended)
+
 1. Go to https://start.spring.io/
 2. Click on "Add Dependencies" and add "Spring Web"
 3. Click on "Generate"
 4. Download the zip file and extract it
 5. Open the project in your IDE
+
+### Clone this repository (Recommended)
+
+```
+git clone https://github.com/asusoda/springboot-workshop.git
+```
+
+And then, open the project in your IDE
+
+
+
 
 ## Running the API
 
